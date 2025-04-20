@@ -1,0 +1,174 @@
+* {
+    /* Устанавливаем box-sizing в border-box для всех элементов, 
+       чтобы padding и border включались в размеры элемента */
+    box-sizing: border-box;
+}
+
+
+/* Подключение шрифта Roboto (готово к использованию) */
+/*
+@font-face {
+    font-family: 'Roboto Regular';
+    src: local("Roboto");
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/* Подключение шрифта Philosopher (готово к использованию) */
+/*
+@font-face {
+    font-family: 'Philosopher Regular';
+    src: local("Philosopher");
+    src: url('../fonts/Philosopher.eot');
+    src: url('../fonts/Philosopher.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Philosopher.woff') format('woff'),
+         url('../fonts/Philosopher.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+body {
+    background-color: #FFE2B0; /* Задаём цвет фона всей странице */
+}
+
+header {
+    text-align: center; /* Центрируем содержимое заголовка */
+    margin-bottom: 20px; /* Отступ снизу от заголовка */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    text-align: center; /* Центрируем элементы списка */
+    padding: 0px; /* Убираем внутренние отступы у списка */
+    font-weight: bold; /* Делаем текст списка жирным */
+}
+
+li {
+    display: inline; /* Располагаем элементы списка в строку */
+    margin-right: 100px; /* Отступ справа между элементами */
+}
+
+li:last-child {
+    margin-right: 0px; /* Убираем отступ у последнего элемента */
+}
+
+a {
+    color: black; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+    font-size: 18px; /* Размер шрифта ссылок */
+}
+
+nav {
+    margin-bottom: 20px; /* Отступ снизу навигационного блока */
+}
+
+.section-about {
+    height: 640px; /* Высота секции "О нас" */
+    background-image: url(../img/01-Картинка-фона.jpg); /* Фоновое изображение */
+    background-position: center; /* Центрируем фоновое изображение */
+    background-size: cover; /* Масштабируем изображение, сохраняя пропорции */
+    position: relative; /* Относительное позиционирование — необходимо для абсолютного позиционирования вложенного блока */
+    margin-bottom: 20px; /* Отступ снизу от секции */
+}
+
+.section-about__block {
+    width: 420px; /* Ширина блока поверх фона */
+    height: 190px; /* Высота блока */
+    background: linear-gradient(180deg, rgba(244, 213, 178, 0.8), rgba(234, 156, 65, 0.8) 100%); /* Градиентный полупрозрачный фон */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    top: 54%; /* Смещение сверху (в процентах от родителя) */
+    left: 50%; /* Смещение слева */
+    padding-top: 15px; /* Внутренний отступ сверху */
+    transform: translate(-50%, -50%); /* Центрируем блок по середине */
+}
+
+.section-about__border {
+    width: 390px; /* Ширина внутреннего блока */
+    height: 160px; /* Высота внутреннего блока */
+    border: 1px solid black; /* Чёрная рамка */
+    margin: 0px auto; /* Центрируем блок по горизонтали */
+    padding: 17px 0px 0px 28px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.section-about__title {
+    font-size: 36px; /* Размер заголовка */
+    margin: 0px; /* Убираем внешние отступы */
+    margin-bottom: 9px; /* Отступ снизу от заголовка */
+    font-family: "Philosopher", sans-serif; /* Используем декоративный шрифт */
+}
+
+.section-about__text {
+    font-size: 12px; /* Размер основного текста */
+    margin: 0px; /* Убираем отступы */
+    font-family: "Roboto", sans-serif; /* Основной текстовый шрифт */
+}
+
+.section-description__icon-box {
+    text-align: center; /* Центруем иконки в блоке */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.section-description__icon-box img {
+    margin-right: 76px; /* Отступ между иконками */
+}
+
+.section-description__icon-box img:last-child {
+    margin-right: 0px; /* Убираем отступ у последней иконки */
+}
+
+.section-description__title {
+    font-size: 96px; /* Очень крупный заголовок */
+    margin: 0px; /* Убираем внешние отступы */
+    text-align: center; /* Центрирование заголовка */
+    font-family: "Philosopher", sans-serif; /* Декоративный шрифт */
+}
+
+.red {
+    color: #f15b40; /* Класс для выделения текста красным */
+}
+
+.section-description__text {
+    font-size: 18px; /* Размер текста */
+    margin: 0px auto; /* Центрируем по горизонтали */
+    text-align: center; /* Выравнивание по центру */
+    width: 1000px; /* Ограничиваем ширину */
+    font-family: "Roboto", sans-serif; /* Шрифт для текста */
+}
+
+.section-description {
+    margin: 20px; /* Отступы вокруг секции */
+}
+
+.section-map {
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.section-map__title {
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: center; /* Центрирование заголовка */
+    font-size: 36px; /* Размер заголовка */
+    font-family: "Philosopher", sans-serif; /* Шрифт заголовка */
+}
+
+iframe {
+    display: block; /* Блочный элемент */
+    margin: 0px auto; /* Центрирование по горизонтали */
+}
+
+.footer-line {
+    border: none; /* Убираем стандартную границу */
+    border-top: 1px solid #999999; /* Добавляем верхнюю границу */
+    width: 1024px; /* Ширина линии */
+    margin: 0px auto 20px auto; /* Центрирование и отступ снизу */
+}
+
+footer {
+    height: 70px; /* Высота подвала */
+}
