@@ -70,7 +70,7 @@ nav {
 
 .section-about {
     height: 640px; /* Высота секции "О нас" */
-    background-image: url(../img/01-Картинка-фона.jpg); /* Фоновое изображение */
+    background-image: url(../img/background.jpg); /* Фоновое изображение */
     background-position: center; /* Центрируем фоновое изображение */
     background-size: cover; /* Масштабируем изображение, сохраняя пропорции */
     position: relative; /* Относительное позиционирование — необходимо для абсолютного позиционирования вложенного блока */
